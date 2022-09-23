@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song suggestions</title>
+    <link rel="icon" type="image/jpeg" href="/image.jpg">
+    <link rel="stylesheet" href="./css/forms.css">
+    <script src="./javaScript/script.js"></script>
+</head>
+<body>
+    <div>
+      <h1>Which song from Yonezu Kenshi did you like the most?</h1>
+      <form class="qp1" onsubmit="goToPage(this, event, 'fav_song')" id="qp1">
+        <input type="radio" id="Lemon" name="fav_song" value="./thankYou.html">
+          <label for="Lemon">Lemon</label><br>
+
+        <input type="radio" id="campanella" name="fav_song" value="./thankYou.html">
+          <label for="campanella">カムパネルラ (campanella)</label><br>
+
+        <input type="radio" id="M87" name="fav_song" value="./thankYou.html">
+          <label for="M87">M八七 (M87)</label>
+      </form>
+      <button type="submit" target="_self" form="qp1">Submit</button>
+    </div>
+</body>
+</html>

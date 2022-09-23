@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Boogaloo&family=Russo+One&display=swap');
+header {
+    padding: 1em 0em
+}
+
+.hero-bg {
+    background: url(../images/banner.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    /* margin: 1em; */
+    border: .4em solid black;
+}
+
+.top img {
+    height: 3vw;
+    width: 3vw;
+}
+
+#music-notes {
+    cursor: pointer;
+}
+
+.hero-bg h1 {
+    font-family: 'Boogaloo', cursive;
+    padding-bottom: 1vw;
+    font-size: 6vw;
+    color: white; 
+    text-shadow: 2px 2px 5px rgb(89, 89, 89);
+    /* position: relative; */
+    /* transform: translate(5.5em,-1.3em); */
+    margin: 0em 8vw 0em -1.6vw;
+    display: flex;
+    justify-content: center;
+    opacity: 0; /*this is changed during a fowards animation*/
+}
+
+.hero-bg h2 {
+    font-size: 2.4vw;
+    color: rgba(235, 235, 235, 0.981); 
+    text-shadow: 2px 2px 5px rgb(89, 89, 89);
+    /* position: relative; */
+    /* transform: translate(37.3em,0.9em); */
+    margin: 5.6em .2em 0em 0em ;
+    display: flex;
+    justify-content: end;
+    opacity: 0; /*this is changed during a fowards animation*/
+}
+
+.top {
+    padding: 0em;
+    margin: 0em;
+}
+
+body {
+    font-family: 'Arvo', serif;
+    margin: 1em;
+}
+
+section.content {
+    display: grid;
+    grid-template-columns: repeat(2,65.9%);
+    grid-template-areas: "text sidebar";
+    margin: 2em 0em 0em 0em;
+}
+
+.article {
+    grid-area: text;
+    margin: 0em 3em 0em 13vw;
+}
+
+.article .questionare {
+    width: 40vw;
+    height: 25vw;
+    display: block !important;
+    margin: auto !important;
+} 
+
+.article iframe {
+    width: 40vw;
+    height: 22.5vw;
+    display: block;
+    margin: auto;
+}
+
+.article h1 {
+    font-size: 2em;
+    margin: 0em;
+}
+
+.article h3 {
+    font-size: .8em;
+}
+
+.article h3 span {
+    color: gray;
+}
+
+.game {
+    grid-area: sidebar;
+    display: flex;
+    height: 18vw;
+    width: 32.5vw;
+    overflow: hidden;
+    margin:0em 0em 0em 0em;
+    position: sticky;
+    top: 2em;
+    z-index: 1;
+    border-color: black;
+    border-width: .2em ;
+}
+
+.ad1 {
+    grid-area: sidebar;
+    transform: translate(0, 25em);
+    width: 32.9vw;
+}
+
+.ad2 {
+    grid-area: sidebar;
+    width: 25vw;
+    transform: translate(0, 150em);
+}
+
+h4 {
+    font-size: .7em;
+    font-weight: lighter;
+    color: gray;
+}
+
+.iri_banner {
+    background-image: linear-gradient(to left, rgb(255, 255, 255) 2%, rgba(130, 130, 130, 0)), url(../images/iri_cover_m.png);
+    background-size: cover;
+    background-position-y: -1em;
+    height: 6em;
+}
+
+.yonezu_kenshi_banner {
+    background-image: linear-gradient(to left, rgb(255, 255, 255) 8%, rgba(130, 130, 130, 0)), url(../images/yz_cover_m.png);
+    background-size: cover;
+    background-position-y: -1em;
+    height: 6em;
+}
+
+.vaundy_banner {
+    background-image: linear-gradient(to left, rgb(255, 255, 255) 8%, rgba(130, 130, 130, 0)), url(../images/vaundy_cover_m.png);
+    background-size: cover;
+    background-position-y: -1em;
+    height: 6em;
+}
+
+.iri_banner h2 {
+    font-size: 3.4em;
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: end;
+    margin: 1em 0em 0em 0em;
+    transform: translateY(.7em);
+}
+
+.yonezu_kenshi_banner h2 {
+    font-size: 3.4em;
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: end;
+    margin: 1em 0em 0em 0em;
+    transform: translateY(.7em);
+}
+
+.vaundy_banner h2 {
+    font-size: 3.4em;
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: end;
+    margin: 1em 0em 0em 0em;
+    transform: translateY(.7em);
+}
+
+.title h1 {
+    animation: fadeIn 4s ease-in-out forwards;
+    /* animation-delay: .5s; */
+}
+
+.title h2 {
+    animation: fadeIn2 3.5s ease-in-out forwards, slideIn 4s ease-in forwards;
+    animation-delay: 2s;    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-1em, -1em);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0em, 0em);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn2 {
+    from {
+        transform: translate(-2em, -2em);
+    }
+    to {
+        transform: translate(0em, 0em);
+    }
+}

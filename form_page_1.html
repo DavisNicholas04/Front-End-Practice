@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song suggestions</title>
+    <link rel="icon" type="image/jpeg" href="/image.jpg">
+    <link rel="stylesheet" href="./css/forms.css">
+    <script src="./javaScript/script.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Which artist did you like the most?</h1>
+        <form class="qp1" onsubmit="goToPage(this, event, 'fav_artist')" target="_self" id="qp1"> 
+
+            <input type="radio" name="fav_artist" id="iri" value="./form_page_2_iri.html">
+                <label for="iri">iri</label><br>
+
+            <input type="radio" name="fav_artist" id="yonezu_kenshi" value="./form_page_2_yk.html">
+                <label for="yonezu_kenshi">Yonezu Kenshi</label><br>
+            
+            <input type="radio" name="fav_artist" id="vaundy" value="./form_page_2_vndy.html">
+                <label for="vaundy">Vaundy</label>
+        </form>
+        <button type="submit" form="qp1" value="go to selection">Next</button>
+    </div> 
+</body>
+
+</html>
