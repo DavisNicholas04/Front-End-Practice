@@ -12,7 +12,7 @@
 <body>
     <div>
       <h1>Which song from Vaundy did you like the most?</h1>
-      <form class="qp1" onsubmit="goToPage(this, event, 'fav_song')" id="qp1">
+      <form class="qp1" onsubmit="goToPage(this, event, 'fav_song')"  target="_self" id="qp1">
         <input type="radio" id="odoriko" name="fav_song" value="./thankYou.html">
           <label for="odoriko">踊り子 (odoriko)</label><br>
 
@@ -22,7 +22,7 @@
         <input type="radio" id="mabataki" name="fav_song" value="./thankYou.html">
           <label for="mabataki">mabataki</label>
       </form>
-      <button type="submit" target="_self" form="qp1">Submit</button>
+      <button type="submit" form="qp1">Submit</button>
     </div>
 </body>
 </html>
